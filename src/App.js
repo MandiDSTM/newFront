@@ -17,18 +17,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Login />} />
           <Route
-            path="/dashboard"
-            element={
-              <ProtectedRoute
-                element={
-                  <Container />
-                }
-              />
-            }
-          />
+            path="/dashboard" element={<ProtectedRoute element={<Container />} />} />
           <Route
             path="/dashboard/miner1"
-            element={<ProtectedRoute element={<Container component={() => <Miner param={1}/>} />} />}
+            element={<ProtectedRoute element={<Container component={() => <Miner param={1} />} />} />}
           />
           <Route
             path="/dashboard/miner2"
@@ -49,14 +41,6 @@ function App() {
           <Route
             path="/dashboard/miner6"
             element={<ProtectedRoute element={<Container component={() => <Miner param={6} />} />} />}
-          />
-          <Route
-            path="/dashboard/miner7"
-            element={<ProtectedRoute element={<Container component={() => <Miner param={7} />} />} />}
-          />
-          <Route
-            path="/dashboard/miner8"
-            element={<ProtectedRoute element={<Container component={() => <Miner param="miner 8" />} />} />}
           />
           <Route
             path="/dashboard/addpdu"

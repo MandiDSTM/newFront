@@ -8,8 +8,14 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'kanit': ['Kanit', 'sans-serif'],
+        'roboto': ['roboto', 'sans-serif'],
       },
+      colors: {
+        dashboardBlue: '#7FA1C3',
+        dashboardDeepBlue: '#6482AD',
+        dashboardPink: '#F5EDED',
+        dashboardKhakiLight:'#E2DAD6'
+      }
     },
   },
   plugins: [
